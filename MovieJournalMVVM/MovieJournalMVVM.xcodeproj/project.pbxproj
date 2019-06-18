@@ -79,10 +79,11 @@
 		200D877522B92C5C00449F33 /* MovieJournalMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				200D879822B9346500449F33 /* Model */,
+				200D879922B9347200449F33 /* View */,
+				200D879A22B9347C00449F33 /* ViewModel */,
+				200D879B22B9348200449F33 /* Controller */,
 				200D877622B92C5C00449F33 /* AppDelegate.swift */,
-				200D877822B92C5C00449F33 /* MasterViewController.swift */,
-				200D877A22B92C5C00449F33 /* DetailViewController.swift */,
-				200D877C22B92C5C00449F33 /* Main.storyboard */,
 				200D877F22B92C6200449F33 /* Assets.xcassets */,
 				200D878122B92C6200449F33 /* LaunchScreen.storyboard */,
 				200D878422B92C6200449F33 /* Info.plist */,
@@ -97,6 +98,37 @@
 				200D878F22B92C6200449F33 /* Info.plist */,
 			);
 			path = MovieJournalMVVMTests;
+			sourceTree = "<group>";
+		};
+		200D879822B9346500449F33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		200D879922B9347200449F33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				200D877C22B92C5C00449F33 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		200D879A22B9347C00449F33 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		200D879B22B9348200449F33 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				200D877822B92C5C00449F33 /* MasterViewController.swift */,
+				200D877A22B92C5C00449F33 /* DetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
