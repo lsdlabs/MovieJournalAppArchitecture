@@ -14,6 +14,8 @@
 		200D878022B92C6200449F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200D877F22B92C6200449F33 /* Assets.xcassets */; };
 		200D878322B92C6200449F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200D878122B92C6200449F33 /* LaunchScreen.storyboard */; };
 		200D878E22B92C6200449F33 /* MovieJournalMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D878D22B92C6200449F33 /* MovieJournalMVVMTests.swift */; };
+		200D879D22B9386000449F33 /* MovieReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D879C22B9386000449F33 /* MovieReview.swift */; };
+		200D879F22B9388E00449F33 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D879E22B9388E00449F33 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		200D878922B92C6200449F33 /* MovieJournalMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieJournalMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		200D878D22B92C6200449F33 /* MovieJournalMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieJournalMVVMTests.swift; sourceTree = "<group>"; };
 		200D878F22B92C6200449F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200D879C22B9386000449F33 /* MovieReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReview.swift; sourceTree = "<group>"; };
+		200D879E22B9388E00449F33 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 		200D879822B9346500449F33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				200D879C22B9386000449F33 /* MovieReview.swift */,
+				200D879E22B9388E00449F33 /* Store.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,8 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				200D879F22B9388E00449F33 /* Store.swift in Sources */,
 				200D877B22B92C5C00449F33 /* DetailViewController.swift in Sources */,
 				200D877922B92C5C00449F33 /* MasterViewController.swift in Sources */,
+				200D879D22B9386000449F33 /* MovieReview.swift in Sources */,
 				200D877722B92C5C00449F33 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
