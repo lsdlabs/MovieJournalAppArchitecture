@@ -9,10 +9,8 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-
-    var detailViewController: DetailViewController? = nil
+    var detailViewController: DetailViewController?
     var objects = [MovieReview]()
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +21,12 @@ class MasterViewController: UITableViewController {
         navigationItem.rightBarButtonItem = addButton
         if let split = splitViewController {
             let controllers = split.viewControllers
-            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+            detailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? DetailViewController
         }
     }
-    
-    
+
     override func viewDidAppear(_ animated: Bool) {
-        self.tableView.reloadData()
+        tableView.reloadData()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -42,6 +39,8 @@ class MasterViewController: UITableViewController {
         objects.insert(MovieReview(title: "", review: ""), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
+        tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableView.ScrollPosition.top) // 1
+        performSegue(withIdentifier: "showDetail", sender: self)
     }
 
     // MARK: - Segues
@@ -89,7 +88,4 @@ class MasterViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
-
-
 }
-
