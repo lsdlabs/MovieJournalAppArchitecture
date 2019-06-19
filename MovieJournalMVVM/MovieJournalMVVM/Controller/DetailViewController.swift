@@ -10,14 +10,29 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
+    @IBOutlet weak var titleTextField: UITextField!
+    
+    @IBAction func userTappedSave(_ sender: UIBarButtonItem) {
+        if var detail: MovieReview = self.detailItem {
+            if let title = self.titleTextField {
+                detail.title = title.text!
+            }
+        }
+        self.navigationController?.popToRootViewController(animated: true)
+        
+//        if var detail = detailItem {
+//            if let title = titleTextField {
+//                detail.title = title.text!
+//            }
+//        }
+//        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.title
+        if let detail: MovieReview = self.detailItem {
+            if let title = self.titleTextField {
+                title.text = detail.title
             }
         }
     }
