@@ -16,6 +16,7 @@
 		200D878E22B92C6200449F33 /* MovieJournalMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D878D22B92C6200449F33 /* MovieJournalMVVMTests.swift */; };
 		200D879D22B9386000449F33 /* MovieReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D879C22B9386000449F33 /* MovieReview.swift */; };
 		200D879F22B9388E00449F33 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D879E22B9388E00449F33 /* Store.swift */; };
+		200D87A122BAA38D00449F33 /* MovieReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D87A022BAA38D00449F33 /* MovieReviewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		200D878F22B92C6200449F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		200D879C22B9386000449F33 /* MovieReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReview.swift; sourceTree = "<group>"; };
 		200D879E22B9388E00449F33 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		200D87A022BAA38D00449F33 /* MovieReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		200D879A22B9347C00449F33 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				200D87A022BAA38D00449F33 /* MovieReviewViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				200D879F22B9388E00449F33 /* Store.swift in Sources */,
+				200D87A122BAA38D00449F33 /* MovieReviewViewModel.swift in Sources */,
 				200D877B22B92C5C00449F33 /* DetailViewController.swift in Sources */,
 				200D877922B92C5C00449F33 /* MasterViewController.swift in Sources */,
 				200D879D22B9386000449F33 /* MovieReview.swift in Sources */,

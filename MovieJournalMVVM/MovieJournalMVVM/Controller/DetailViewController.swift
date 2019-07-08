@@ -10,14 +10,19 @@ import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet var titleTextField: UITextField!
-
+    
+    
+    
+    
     @IBAction func userTappedSave(_ sender: UIBarButtonItem) {
         if var detail: MovieReview = self.detailItem {
             if let title = self.titleTextField {
                 detail.title = title.text!
             }
         }
-        navigationController?.popToRootViewController(animated: true)
+        //navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.dismiss(animated: true, completion: nil)
+
 
 //        if var detail = detailItem {
 //            if let title = titleTextField {

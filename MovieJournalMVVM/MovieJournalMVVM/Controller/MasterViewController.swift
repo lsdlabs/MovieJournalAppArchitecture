@@ -10,7 +10,7 @@ import UIKit
 
 class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController?
-    var objects = [MovieReview]()
+    var objects = [MovieReview]() //should contain an array of MovieReviewViewModel???
 
     override func viewDidLoad() {
         super.viewDidLoad()
