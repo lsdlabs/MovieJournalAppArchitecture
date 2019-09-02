@@ -8,49 +8,55 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class EntryDetailViewController: UIViewController, UITextFieldDelegate {
+    // MARK: Properties
+    
     @IBOutlet var titleTextField: UITextField!
+    @IBOutlet var reviewTextView: UITextView!
     
-    
-    
-    
-    @IBAction func userTappedSave(_ sender: UIBarButtonItem) {
-        if var detail: MovieReview = self.detailItem {
-            if let title = self.titleTextField {
-                detail.title = title.text!
-            }
-        }
-        //navigationController?.popToRootViewController(animated: true)
-        self.navigationController?.dismiss(animated: true, completion: nil)
-
-
-//        if var detail = detailItem {
-//            if let title = titleTextField {
-//                detail.title = title.text!
-//            }
-//        }
-//        self.navigationController?.popToRootViewController(animated: true)
-    }
-
-    func configureView() {
-        // Update the user interface for the detail item.
-        if let detail: MovieReview = self.detailItem {
-            if let title = self.titleTextField {
-                title.text = detail.title
-            }
+    var entry: MovieReview? {
+        didSet {
+            if isViewLoaded { updateViews() }
         }
     }
-
+    
+    // MARK: Lifecycle
+    
+    /// calls update views
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        configureView()
+        updateViews()
     }
-
-    var detailItem: MovieReview? {
-        didSet {
-            // Update the view.
-            configureView()
+    
+    // MARK: Methods
+    
+    /// Checks if the optional entry property holds an entry. If it does, the function updates all view elements that reflect details about the model object movieReview (in this case, the titleTextField and reviewTextView)
+    /// Will update the destination view controller with the entry details
+    private func updateViews() {
+        guard let entry = entry else { return }
+        titleTextField.text = entry.title
+        reviewTextView.text = entry.review
+    }
+    
+    // MARK: Actions
+    
+    /// checks if the optional entry property holds an entry and if it does, it calls the update(entry: ...) function in the Store to update the properties of the entry. If not, it calls the add(entry: MovieReview) function on the Store. After adding a new entry, or updating the existing entry, it dismisses the current view.
+    @IBAction func userTappedSave(_ sender: UIBarButtonItem) {
+        guard let title = titleTextField.text, let text = reviewTextView.text else { return }
+        
+        if let entry = self.entry {
+            Store.shared.update(entry: entry, with: title, review: text)
+        } else {
+            Store.shared.addEntryWith(title: title, review: text)
         }
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
+    // MARK: UITextFieldDelegate
+    
+    /// Calls the resignFirstResponder() method on the titleTextField to dismiss the keyboard
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

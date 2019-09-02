@@ -17,6 +17,8 @@
 		200D879D22B9386000449F33 /* MovieReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D879C22B9386000449F33 /* MovieReview.swift */; };
 		200D879F22B9388E00449F33 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D879E22B9388E00449F33 /* Store.swift */; };
 		200D87A122BAA38D00449F33 /* MovieReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D87A022BAA38D00449F33 /* MovieReviewViewModel.swift */; };
+		20342CA7231DC5430034789B /* SegueIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20342CA6231DC5430034789B /* SegueIdentifier.swift */; };
+		20342CA9231DC6200034789B /* MovieReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20342CA8231DC6200034789B /* MovieReviewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		200D879C22B9386000449F33 /* MovieReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReview.swift; sourceTree = "<group>"; };
 		200D879E22B9388E00449F33 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		200D87A022BAA38D00449F33 /* MovieReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewViewModel.swift; sourceTree = "<group>"; };
+		20342CA6231DC5430034789B /* SegueIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifier.swift; sourceTree = "<group>"; };
+		20342CA8231DC6200034789B /* MovieReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				200D877C22B92C5C00449F33 /* Main.storyboard */,
+				20342CA8231DC6200034789B /* MovieReviewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			children = (
 				200D877822B92C5C00449F33 /* MasterViewController.swift */,
 				200D877A22B92C5C00449F33 /* DetailViewController.swift */,
+				20342CA6231DC5430034789B /* SegueIdentifier.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,7 +249,9 @@
 			files = (
 				200D879F22B9388E00449F33 /* Store.swift in Sources */,
 				200D87A122BAA38D00449F33 /* MovieReviewViewModel.swift in Sources */,
+				20342CA9231DC6200034789B /* MovieReviewCell.swift in Sources */,
 				200D877B22B92C5C00449F33 /* DetailViewController.swift in Sources */,
+				20342CA7231DC5430034789B /* SegueIdentifier.swift in Sources */,
 				200D877922B92C5C00449F33 /* MasterViewController.swift in Sources */,
 				200D879D22B9386000449F33 /* MovieReview.swift in Sources */,
 				200D877722B92C5C00449F33 /* AppDelegate.swift in Sources */,
