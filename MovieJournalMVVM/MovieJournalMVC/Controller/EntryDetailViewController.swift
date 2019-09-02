@@ -1,8 +1,8 @@
 //
-//  DetailViewController.swift
-//  MovieJournalMVVM
+//  EntryDetailViewController.swift
+//  MovieJournalMVC
 //
-//  Created by Lauren Small on 6/18/19.
+//  Created by Lauren Small on 3/19/19.
 //  Copyright © 2019 Lauren Small. All rights reserved.
 //
 

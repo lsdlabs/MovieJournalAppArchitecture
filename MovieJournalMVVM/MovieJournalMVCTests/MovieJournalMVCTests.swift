@@ -1,15 +1,14 @@
 //
-//  MovieJournalMVVMTests.swift
-//  MovieJournalMVVMTests
+//  MovieJournalMVCTests.swift
+//  MovieJournalMVCTests
 //
-//  Created by Lauren Small on 6/18/19.
+//  Created by Lauren Small on 4/17/19.
 //  Copyright © 2019 Lauren Small. All rights reserved.
 //
 
 import XCTest
-@testable import MovieJournalMVVM
 
-class MovieJournalMVVMTests: XCTestCase {
+class MovieJournalMVCTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

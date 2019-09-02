@@ -1,8 +1,8 @@
 //
 //  MasterViewController.swift
-//  MovieJournalMVVM
+//  MovieJournalMVC
 //
-//  Created by Lauren Small on 6/18/19.
+//  Created by Lauren Small on 3/12/19.
 //  Copyright © 2019 Lauren Small. All rights reserved.
 //
 
@@ -76,8 +76,8 @@ class MovieReviewListViewController: UITableViewController {
             let entry = movieStore.entries[indexPath.row]
             movieStore.remove(entry: entry)
             
-            //            // Delete the row from the table view
-            //            tableView.deleteRows(at: [indexPath], with: .fade)
+//            // Delete the row from the table view
+//            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
 }

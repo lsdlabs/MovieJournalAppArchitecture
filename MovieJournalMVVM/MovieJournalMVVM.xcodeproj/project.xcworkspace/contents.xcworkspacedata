@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MovieJournalMVVM.xcodeproj">
+      location = "self:/Users/laurensmall/Desktop/123/MovieJournalAppArchitecture/MovieJournalMVVM/MovieJournalMVVM.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MovieJournalMVVM
+//  MovieJournalMVC
 //
-//  Created by Lauren Small on 6/18/19.
+//  Created by Lauren Small on 3/12/19.
 //  Copyright © 2019 Lauren Small. All rights reserved.
 //
 
@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        let splitViewController = window!.rootViewController as! UISplitViewController
-//        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
-//        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
-//        splitViewController.delegate = self
+        let splitViewController = window!.rootViewController as! UISplitViewController
+        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
+        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+        splitViewController.delegate = self
         return true
     }
 

@@ -1,8 +1,8 @@
 //
 //  Store.swift
-//  MovieJournalMVVM
+//  MovieJournalMVC
 //
-//  Created by Lauren Small on 6/18/19.
+//  Created by Lauren Small on 3/12/19.
 //  Copyright © 2019 Lauren Small. All rights reserved.
 //
 
@@ -97,14 +97,14 @@ extension FileManager: FileManageable {
     }
     
     func write(_ data: Data, to url: URL) throws {
-        //        let success = createFile(atPath: url.absoluteString, contents: data, attributes: nil)
+//        let success = createFile(atPath: url.absoluteString, contents: data, attributes: nil)
         
         let success = createFile(atPath: url.path, contents: data, attributes: nil)
         if !success { throw FileError.couldNotWriteFileToDisk }
     }
     
     func read(from url: URL) throws -> Data {
-        //        guard let contents = contents(atPath: url.absoluteString) else {
+//        guard let contents = contents(atPath: url.absoluteString) else {
         guard let contents = contents(atPath: url.path) else {
             throw FileError.couldNotFindFile
         }

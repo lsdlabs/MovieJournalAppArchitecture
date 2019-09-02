@@ -1,8 +1,8 @@
 //
 //  MovieReviewCell.swift
-//  MovieJournalMVVM
+//  MovieJournalMVC
 //
-//  Created by Lauren Small on 9/2/19.
+//  Created by Lauren Small on 3/12/19.
 //  Copyright © 2019 Lauren Small. All rights reserved.
 //
 
