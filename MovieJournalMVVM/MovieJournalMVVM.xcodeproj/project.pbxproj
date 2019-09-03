@@ -16,8 +16,9 @@
 		2028BE772238967000DA2508 /* MovieReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028BE762238967000DA2508 /* MovieReview.swift */; };
 		2028BE792238980D00DA2508 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028BE782238980D00DA2508 /* Store.swift */; };
 		2028BE7B2238AC3100DA2508 /* MovieReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028BE7A2238AC3100DA2508 /* MovieReviewCell.swift */; };
+		20342CAC231DEAAC0034789B /* MovieReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20342CAB231DEAAC0034789B /* MovieReviewViewModel.swift */; };
 		2098D57E224137B000CC2C59 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098D57D224137B000CC2C59 /* EntryDetailViewController.swift */; };
-		20C5AFD422676C8B0056B990 /* MovieJournalMVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5AFD322676C8B0056B990 /* MovieJournalMVCTests.swift */; };
+		20C5AFD422676C8B0056B990 /* MovieJournalMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5AFD322676C8B0056B990 /* MovieJournalMVVMTests.swift */; };
 		20C5AFDC22676CD10056B990 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5AFDB22676CD10056B990 /* StoreTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,9 +44,10 @@
 		2028BE762238967000DA2508 /* MovieReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReview.swift; sourceTree = "<group>"; };
 		2028BE782238980D00DA2508 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		2028BE7A2238AC3100DA2508 /* MovieReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewCell.swift; sourceTree = "<group>"; };
+		20342CAB231DEAAC0034789B /* MovieReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewViewModel.swift; sourceTree = "<group>"; };
 		2098D57D224137B000CC2C59 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 		20C5AFD122676C8B0056B990 /* MovieJournalMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieJournalMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		20C5AFD322676C8B0056B990 /* MovieJournalMVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieJournalMVCTests.swift; sourceTree = "<group>"; };
+		20C5AFD322676C8B0056B990 /* MovieJournalMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieJournalMVVMTests.swift; sourceTree = "<group>"; };
 		20C5AFD522676C8B0056B990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20C5AFDB22676CD10056B990 /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,8 +73,8 @@
 		2028BE5322388CF200DA2508 = {
 			isa = PBXGroup;
 			children = (
-				2028BE5E22388CF200DA2508 /* MovieJournalMVC */,
-				20C5AFD222676C8B0056B990 /* MovieJournalMVCTests */,
+				2028BE5E22388CF200DA2508 /* MovieJournalMVVM */,
+				20C5AFD222676C8B0056B990 /* MovieJournalMVVMTests */,
 				2028BE5D22388CF200DA2508 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,18 +88,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2028BE5E22388CF200DA2508 /* MovieJournalMVC */ = {
+		2028BE5E22388CF200DA2508 /* MovieJournalMVVM */ = {
 			isa = PBXGroup;
 			children = (
 				2028BE73223892F900DA2508 /* Model */,
 				2028BE742238931D00DA2508 /* View */,
+				20342CAA231DEA740034789B /* ViewModel */,
 				2028BE752238932300DA2508 /* Controller */,
 				2028BE5F22388CF200DA2508 /* AppDelegate.swift */,
 				2028BE6822388CF600DA2508 /* Assets.xcassets */,
 				2028BE6A22388CF600DA2508 /* LaunchScreen.storyboard */,
 				2028BE6D22388CF600DA2508 /* Info.plist */,
 			);
-			path = MovieJournalMVC;
+			path = MovieJournalMVVM;
 			sourceTree = "<group>";
 		};
 		2028BE73223892F900DA2508 /* Model */ = {
@@ -128,14 +131,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		20C5AFD222676C8B0056B990 /* MovieJournalMVCTests */ = {
+		20342CAA231DEA740034789B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				20C5AFD322676C8B0056B990 /* MovieJournalMVCTests.swift */,
+				20342CAB231DEAAC0034789B /* MovieReviewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		20C5AFD222676C8B0056B990 /* MovieJournalMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				20C5AFD322676C8B0056B990 /* MovieJournalMVVMTests.swift */,
 				20C5AFD522676C8B0056B990 /* Info.plist */,
 				20C5AFDB22676CD10056B990 /* StoreTests.swift */,
 			);
-			path = MovieJournalMVCTests;
+			path = MovieJournalMVVMTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 				2028BE7B2238AC3100DA2508 /* MovieReviewCell.swift in Sources */,
 				2028BE792238980D00DA2508 /* Store.swift in Sources */,
 				2028BE6222388CF200DA2508 /* MovieReviewListViewController.swift in Sources */,
+				20342CAC231DEAAC0034789B /* MovieReviewViewModel.swift in Sources */,
 				200F135C22494A090048CA69 /* SegueIdentifier.swift in Sources */,
 				2028BE772238967000DA2508 /* MovieReview.swift in Sources */,
 				2098D57E224137B000CC2C59 /* EntryDetailViewController.swift in Sources */,
@@ -253,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20C5AFD422676C8B0056B990 /* MovieJournalMVCTests.swift in Sources */,
+				20C5AFD422676C8B0056B990 /* MovieJournalMVVMTests.swift in Sources */,
 				20C5AFDC22676CD10056B990 /* StoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,12 +421,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MovieJournalMVC/Info.plist;
+				INFOPLIST_FILE = MovieJournalMVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.MovieJournalMVC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.MovieJournalMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -426,12 +438,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MovieJournalMVC/Info.plist;
+				INFOPLIST_FILE = MovieJournalMVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.MovieJournalMVC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.MovieJournalMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

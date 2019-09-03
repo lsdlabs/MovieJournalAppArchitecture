@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct MovieReviewViewModel {
+    var title: String
+    var review: String
+    var movieReview: MovieReview
+    
+    init(movieReview: MovieReview){
+        self.title = movieReview.title
+        self.review = movieReview.review
+        self.movieReview = movieReview
+    }
+}
